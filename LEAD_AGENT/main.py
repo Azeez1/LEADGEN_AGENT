@@ -6,6 +6,15 @@ from calendly import get_user_profile, get_scheduled_events
 load_dotenv()
 app = FastAPI()
 
+USE_MOCK = os.getenv("USE_MOCK_DATA", "true").lower() == "true"
+
+@app.get("/calendly/events")
+async def get_events():
+    if USE_MOCK:
+        return get_mock_events()
+    else:
+        # Placeholder for real Calendly API call
+        return {"message": "Live Calendly integration not active yet."}
 @app.get("/")
 async def root():
     return {"message": "AI Lead Agent API is running"}

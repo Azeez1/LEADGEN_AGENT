@@ -1,7 +1,7 @@
 import os
 import httpx
 from dotenv import load_dotenv
-
+import json
 load_dotenv()
 
 BASE_URL = "https://api.calendly.com"
@@ -31,3 +31,8 @@ async def get_scheduled_events():
             headers=HEADERS
         )
         return res.json()
+
+
+def get_mock_events():
+    with open("mock_data/calendly_events.json", "r") as f:
+        return json.load(f)

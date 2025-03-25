@@ -1,0 +1,19 @@
+{
+  "qualification_sequence": [
+    {
+      "day": 1,
+      "subject": "Quick Question About Your Real Estate Goals",
+      "body": "Hi {{name}}, thanks for downloading the guide! Are you currently buying, selling, or investing?"
+    },
+    {
+      "day": 3,
+      "subject": "Still Need Help Finding the Right Property?",
+      "body": "Just checking in, {{name}}. Would love to know how I can support your real estate journey."
+    },
+    {
+      "day": 5,
+      "subject": "Let’s Get You Scheduled",
+      "body": "If you're ready, here's a link to book a quick call: {{calendly_link}}"
+    }
+  ]
+}
