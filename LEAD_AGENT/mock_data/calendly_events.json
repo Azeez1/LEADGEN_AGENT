@@ -1,0 +1,9 @@
+{
+  "events": [
+    {
+      "event_name": "Real Estate Strategy Call",
+      "start_time": "2025-03-26T15:00:00Z",
+      "invitee_email": "lead@example.com"
+    }
+  ]
+}
